@@ -23,7 +23,7 @@ header img {
   width: 102px;
 }
 
-nav > ul {
+header ul {
   margin-top: 1em;
   width: 348px;
   display: flex;
@@ -88,13 +88,13 @@ main div {
   align-items: center;
 }
 
+main img {
+  height: 100px;
+}
+
 h2 {
   font-size: 3vmax;
   margin: 0.5em;
-}
-
-main img {
-  height: 100px;
 }
 
 .name {

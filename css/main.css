@@ -1,7 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:400,700);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   width: 1000px;
   margin: 2em auto;
-  font-family: "Helvetica Neue"
+  font-family: "Josefin Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 header {
@@ -9,20 +18,85 @@ header {
   justify-content: space-between;
 }
 
+header img {
+  height: 102px;
+  width: 102px;
+}
+
 nav > ul {
+  margin-top: 1em;
   width: 348px;
   display: flex;
   list-style-type: none;
   justify-content: space-between;
 }
 
-#logo {
-  height: 102px;
-  width: 102px;
-}
-
-li {
+nav a {
+  text-decoration: none;
+  color: black;
   background-color: #f99d22;
   border-radius: 4px;
   padding: 0.5em;
+}
+
+nav a:hover {
+  background-color: #2db2c4;
+  color: white;
+}
+
+a.active {
+  background-color: #e45026;
+  color: white;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  margin: 1em auto;
+  background:
+radial-gradient(circle, transparent 20%, slategray 20%, slategray 80%, transparent 80%, transparent),
+radial-gradient(circle, transparent 20%, slategray 20%, slategray 80%, transparent 80%, transparent) 50px 50px,
+linear-gradient(#A8B1BB 8px, transparent 8px) 0 -4px,
+linear-gradient(90deg, #A8B1BB 8px, transparent 8px) -4px 0;
+background-color: slategray;
+background-size:100px 100px, 100px 100px, 50px 50px, 50px 50px;
+}
+
+h1, h2, h3 {
+  font-family: "Josefin Slab", Arial, serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 6vmax;
+  margin: 0.2em;
+}
+
+main {
+  margin: 2em auto;
+  line-height: 1.5;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  text-align: justify;
+}
+
+main div {
+  display: flex;
+  flex-flow: column wrap;
+  width: 19em;
+  align-items: center;
+}
+
+h2 {
+  font-size: 3vmax;
+  margin: 0.5em;
+}
+
+main img {
+  height: 100px;
+}
+
+.name {
+  font-style: italic;
 }

@@ -1,9 +1,18 @@
 body {
   width: 1000px;
-  margin: 0 auto;
+  margin: 2em auto;
 }
 
 header {
   display: flex;
   border: 2px solid black;
+}
+
+nav {
+  display: flex;
+}
+
+#logo {
+  height: 102px;
+  width: 102px;
 }
